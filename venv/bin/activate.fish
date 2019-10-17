@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/mark/2019-2-Track-Backbend-M-Romanovskiy/venv"
+set -gx VIRTUAL_ENV "/home/mark/2019-2-Track-Backend-M-Romanovskiy/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/mark/2019-2-Track-Backbend-M-Romanovskiy/venv"
+VIRTUAL_ENV="/home/mark/2019-2-Track-Backend-M-Romanovskiy/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

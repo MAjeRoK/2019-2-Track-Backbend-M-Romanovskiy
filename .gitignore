@@ -1,4 +1,5 @@
 venv/
-*.рус
+.vscode/
+*.pyc
 *.swo
 *.swp
