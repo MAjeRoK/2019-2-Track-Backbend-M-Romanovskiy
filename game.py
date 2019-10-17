@@ -60,14 +60,23 @@ class Game(object):
 
 class TestGame(unittest.TestCase):
 
-    def test_upper(self):
-        self.assertEqual('foo'.upper(), 'FOO')
+    def test_rstr(self):
+        tplay = Game()
+        tsq = ['1', '2', 'X', '4', '5', '6', 'O', 'X', '9']
+        self.assertEqual(tplay.rstr(0, tsq), '|1|2|X|')
+        self.assertEqual(tplay.rstr(1, tsq), '|4|5|6|')
+        self.assertEqual(tplay.rstr(2, tsq), '|O|X|9|')
         
     def test_correct(self):
         tplay = Game()
         tsq = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
         self.assertTrue(tplay.corr('7', tsq))
         self.assertFalse(tplay.corr('1000',  tsq))
+    
+    def test_check(self):
+        tplay = Game()
+        self.assertTrue(tplay.check(['X', 'X', 'X', '4', 'O', 'O', '7', '8', '9']))
+        self.assertFalse(tplay.check(['X', 'O', 'X', '4', 'O', 'O', '7', 'X', '9']))
         
 if __name__ == "__main__":
     play = Game()
