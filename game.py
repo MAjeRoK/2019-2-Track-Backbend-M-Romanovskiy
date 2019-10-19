@@ -32,7 +32,7 @@ class Game(object):
         return False
 
     def rstr(self, i, sq):
-        return "|", sq[0 + i * 3], "|", sq[1 + i * 3], "|", sq[2 + i * 3], "|"
+        return "|%s|%s|%s|" % (sq[0 + i * 3], sq[1 + i * 3], sq[2 + i * 3])
 
     def start(self):
         a = ['X', 'O']
